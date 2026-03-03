@@ -1,0 +1,2897 @@
+{
+  "title": "CFIHOS V2.0 Data Model",
+  "description": "Capital Facilities Information Handover Standard (CFIHOS) Version 2.0 â Reference data model for asset information handover in the oil & gas industry. Published by IOGP.",
+  "license": "IOGP",
+  "source": "CFIHOS V2.0",
+  "source_url": "https://www.iogp.org/bookstore/product/cfihos/",
+  "databases": {
+    "cfihos": {
+      "title": "CFIHOS V2.0",
+      "description": "The complete CFIHOS V2.0 reference data model â 144 tables covering tag classes, equipment classes, properties, units of measure, source standards, and document requirements.",
+      "tables": {
+        "additional_file": {
+          "title": "ADDITIONAL_FILE",
+          "columns": {
+            "document_number": {
+              "title": "Document number"
+            },
+            "document_revision_code": {
+              "title": "Document revision code"
+            },
+            "file_title": {
+              "title": "File title"
+            },
+            "file_name": {
+              "title": "File name"
+            },
+            "storage_media": {
+              "title": "Storage media"
+            },
+            "iso_language_code": {
+              "title": "ISO language code"
+            }
+          }
+        },
+        "application_condition": {
+          "title": "APPLICATION CONDITION",
+          "columns": {
+            "application_condition_code": {
+              "title": "Application condition code"
+            },
+            "application_condition_description": {
+              "title": "Application condition description"
+            },
+            "tag_or_equipment_class_name": {
+              "title": "Tag or equipment class name"
+            },
+            "property_name": {
+              "title": "Property name"
+            },
+            "comparison_operator_code": {
+              "title": "Comparison operator code"
+            },
+            "application_condition_value": {
+              "title": "Application condition value"
+            },
+            "unit_of_measure_name": {
+              "title": "Unit of measure name"
+            },
+            "cfihos_unique_code": {
+              "title": "CFIHOS unique code"
+            }
+          },
+          "description": "A condition on a property value that controls when a property or document requirement applies (e.g. \"when design pressure > 100 bar\")."
+        },
+        "application_condition_group": {
+          "title": "APPLICATION CONDITION GROUP",
+          "columns": {
+            "application_condition_group_code": {
+              "title": "Application condition group code"
+            },
+            "application_condition_group_description": {
+              "title": "Application condition group description"
+            },
+            "cfihos_unique_code": {
+              "title": "CFIHOS unique code"
+            }
+          },
+          "description": "A named group of application conditions combined with logical AND/OR."
+        },
+        "application_condition_group_member": {
+          "title": "APPLICATION CONDITION GROUP MEMBER",
+          "columns": {
+            "application_condition_group_code": {
+              "title": "Application condition group code"
+            },
+            "application_condition_code": {
+              "title": "Application condition code"
+            }
+          },
+          "description": "Members of an application condition group."
+        },
+        "area": {
+          "title": "AREA",
+          "columns": {
+            "plant_code": {
+              "title": "Plant code"
+            },
+            "area_code": {
+              "title": "Area code"
+            },
+            "area_name": {
+              "title": "Area name"
+            }
+          }
+        },
+        "asset_type": {
+          "title": "ASSET TYPE",
+          "columns": {
+            "asset_type_code": {
+              "title": "Asset type code"
+            },
+            "asset_type_description": {
+              "title": "Asset type description"
+            },
+            "cfihos_unique_code": {
+              "title": "CFIHOS unique code"
+            }
+          }
+        },
+        "cfihos_object_equivalent_mapping": {
+          "title": "CFIHOS OBJECT EQUIVALENT MAPPING",
+          "columns": {
+            "coding_source_code": {
+              "title": "Coding source code"
+            },
+            "cfihos_unique_code": {
+              "title": "CFIHOS unique code"
+            },
+            "cfihos_code_equivalent_value": {
+              "title": "CFIHOS code equivalent value"
+            }
+          }
+        },
+        "coding_source": {
+          "title": "CODING SOURCE",
+          "columns": {
+            "coding_source_code": {
+              "title": "Coding source code"
+            },
+            "cfihos_coding_equivalent_source_description": {
+              "title": "CFIHOS coding equivalent source description"
+            },
+            "cfihos_unique_code": {
+              "title": "CFIHOS unique code"
+            }
+          }
+        },
+        "commissioning_unit": {
+          "title": "COMMISSIONING UNIT",
+          "columns": {
+            "plant_code": {
+              "title": "Plant code"
+            },
+            "commissioning_unit_code": {
+              "title": "Commissioning unit code"
+            },
+            "commissioning_unit_name": {
+              "title": "Commissioning unit name"
+            },
+            "parent_commissioning_unit_code": {
+              "title": "Parent commissioning unit code"
+            }
+          }
+        },
+        "company": {
+          "title": "COMPANY",
+          "columns": {
+            "manufacturer_indicator": {
+              "title": "Manufacturer indicator"
+            },
+            "supplier_indicator": {
+              "title": "Supplier indicator"
+            },
+            "company_name": {
+              "title": "Company name"
+            },
+            "company_contact_person": {
+              "title": "Company contact person"
+            },
+            "company_contact_person_function": {
+              "title": "Company contact person function"
+            },
+            "company_address_line_1": {
+              "title": "Company address line 1"
+            },
+            "company_address_line_2": {
+              "title": "Company address line 2"
+            },
+            "company_address_line_3": {
+              "title": "Company address line 3"
+            },
+            "iso_country_code": {
+              "title": "ISO country code"
+            },
+            "company_telephone_number": {
+              "title": "Company telephone number"
+            },
+            "company_fax_number": {
+              "title": "Company fax number"
+            },
+            "company_email_address": {
+              "title": "Company email address"
+            }
+          }
+        },
+        "comparison_operator": {
+          "title": "COMPARISON OPERATOR",
+          "columns": {
+            "comparison_operator_code": {
+              "title": "Comparison operator code"
+            },
+            "comparison_operator_name": {
+              "title": "Comparison operator name"
+            },
+            "cfihos_unique_code": {
+              "title": "CFIHOS unique code"
+            }
+          }
+        },
+        "component_role": {
+          "title": "COMPONENT ROLE",
+          "columns": {
+            "component_role_name": {
+              "title": "Component role name"
+            },
+            "component_role_description": {
+              "title": "Component role description"
+            }
+          }
+        },
+        "construction_assembly": {
+          "title": "CONSTRUCTION ASSEMBLY",
+          "columns": {
+            "plant_code": {
+              "title": "Plant code"
+            },
+            "construction_assembly_code": {
+              "title": "Construction assembly code"
+            },
+            "construction_assembly_name": {
+              "title": "Construction assembly name"
+            },
+            "parent_construction_assembly_code": {
+              "title": "Parent construction assembly code"
+            }
+          }
+        },
+        "corrosion_loop": {
+          "title": "CORROSION LOOP",
+          "columns": {
+            "plant_code": {
+              "title": "Plant code"
+            },
+            "corrosion_loop_code": {
+              "title": "Corrosion loop code"
+            },
+            "corrosion_loop_name": {
+              "title": "Corrosion loop name"
+            },
+            "corrosion_loop_description": {
+              "title": "Corrosion loop description"
+            },
+            "corrosion_loop_type_code": {
+              "title": "Corrosion loop type code"
+            },
+            "corrosion_loop_process_description": {
+              "title": "Corrosion loop process description"
+            },
+            "corrosion_type_description": {
+              "title": "Corrosion type description"
+            }
+          }
+        },
+        "corrosion_loop_type": {
+          "title": "CORROSION LOOP TYPE",
+          "columns": {
+            "corrosion_loop_type_code": {
+              "title": "Corrosion loop type code"
+            },
+            "corrosion_loop_type_name": {
+              "title": "Corrosion loop type name"
+            }
+          }
+        },
+        "data_type": {
+          "title": "DATA TYPE",
+          "columns": {
+            "data_type_code": {
+              "title": "Data type code"
+            },
+            "data_type_name": {
+              "title": "Data type name"
+            },
+            "cfihos_unique_code": {
+              "title": "CFIHOS unique code"
+            }
+          }
+        },
+        "deliverable_format": {
+          "title": "DELIVERABLE FORMAT",
+          "columns": {
+            "deliverable_format_code": {
+              "title": "Deliverable format code"
+            },
+            "deliverable_format_description": {
+              "title": "Deliverable format description"
+            },
+            "cfihos_unique_code": {
+              "title": "CFIHOS unique code"
+            }
+          }
+        },
+        "discipline": {
+          "title": "DISCIPLINE",
+          "columns": {
+            "discipline_code": {
+              "title": "Discipline code"
+            },
+            "discipline_name": {
+              "title": "Discipline name"
+            },
+            "discipline_description": {
+              "title": "Discipline description"
+            },
+            "cfihos_unique_code": {
+              "title": "CFIHOS unique code"
+            }
+          },
+          "description": "Engineering disciplines (e.g. Mechanical, Electrical, Instrumentation) used to categorise documents."
+        },
+        "discipline_document_type": {
+          "title": "DISCIPLINE DOCUMENT TYPE",
+          "columns": {
+            "hardcopy_document_required": {
+              "title": "Hardcopy document required"
+            },
+            "translated_document_required": {
+              "title": "Translated document required"
+            },
+            "discipline_code": {
+              "title": "Discipline code"
+            },
+            "document_type_short_code": {
+              "title": "Document type short code"
+            },
+            "discipline_document_type_short_code": {
+              "title": "Discipline document type short code"
+            },
+            "asset_type_reference": {
+              "title": "Asset type reference"
+            },
+            "representation_type": {
+              "title": "Representation type"
+            },
+            "review_type": {
+              "title": "Review type"
+            },
+            "discipline_document_type_comment": {
+              "title": "Discipline document type comment"
+            },
+            "native_document_format": {
+              "title": "Native document format"
+            },
+            "native_file_delivery_timing": {
+              "title": "Native file delivery timing"
+            },
+            "authenticated_record_format": {
+              "title": "Authenticated record format"
+            },
+            "cfihos_unique_code": {
+              "title": "CFIHOS unique code"
+            }
+          },
+          "description": "Defines which document types are required for each discipline, with asset type, format, and review requirements."
+        },
+        "discipline_document_type_handover_requirement": {
+          "title": "DISCIPLINE DOCUMENT TYPE HANDOVER REQUIREMENT",
+          "columns": {
+            "discipline_code": {
+              "title": "Discipline code"
+            },
+            "document_type_short_code": {
+              "title": "Document type short code"
+            },
+            "handover_event_name": {
+              "title": "Handover event name"
+            },
+            "required_document_status_for_the_handover_event": {
+              "title": "Required document status for the handover event"
+            }
+          },
+          "description": "Specifies the required document status for each discipline/document type at each handover event."
+        },
+        "document_and_data_requirement_group": {
+          "title": "DOCUMENT AND DATA REQUIREMENT GROUP",
+          "columns": {
+            "document_and_data_requirement_group_code": {
+              "title": "Document and data requirement group code"
+            },
+            "document_and_data_requirement_group_name": {
+              "title": "Document and data requirement group name"
+            },
+            "cfihos_unique_code": {
+              "title": "CFIHOS unique code"
+            }
+          }
+        },
+        "document_and_data_requirement_type": {
+          "title": "DOCUMENT AND DATA REQUIREMENT TYPE",
+          "columns": {
+            "document_and_data_requirement_type_code": {
+              "title": "Document and data requirement type code"
+            },
+            "document_and_data_requirement_type_description": {
+              "title": "Document and data requirement type description"
+            },
+            "cfihos_unique_code": {
+              "title": "CFIHOS unique code"
+            }
+          }
+        },
+        "document_format": {
+          "title": "DOCUMENT FORMAT",
+          "columns": {
+            "document_format_code": {
+              "title": "Document format code"
+            },
+            "document_format_description": {
+              "title": "Document format description"
+            },
+            "cfihos_unique_code": {
+              "title": "CFIHOS unique code"
+            }
+          }
+        },
+        "document_master": {
+          "title": "DOCUMENT MASTER",
+          "columns": {
+            "document_number": {
+              "title": "Document number"
+            },
+            "document_title": {
+              "title": "Document title"
+            },
+            "planned_final_revision_date": {
+              "title": "Planned final revision date"
+            },
+            "discipline_document_type_short_code": {
+              "title": "Discipline document type short code"
+            },
+            "actual_final_revision_date": {
+              "title": "Actual final revision date"
+            },
+            "document_review_type": {
+              "title": "Document review type"
+            },
+            "forecast_review_date": {
+              "title": "Forecast review date"
+            },
+            "forecast_approval_date": {
+              "title": "Forecast approval date"
+            },
+            "vendor_document_update_description": {
+              "title": "Vendor document update description"
+            },
+            "forecast_approved_for_design_date": {
+              "title": "Forecast approved for design date"
+            },
+            "forecast_approved_for_construction_date": {
+              "title": "Forecast approved for construction date"
+            },
+            "forecast_as_built_date": {
+              "title": "Forecast as built date"
+            },
+            "purchase_order_issuer_company_name": {
+              "title": "Purchase order issuer company name"
+            },
+            "purchase_order_number": {
+              "title": "Purchase order number"
+            }
+          }
+        },
+        "document_representation_type": {
+          "title": "DOCUMENT REPRESENTATION TYPE",
+          "columns": {
+            "documentation_representation_type_code": {
+              "title": "Documentation representation type code"
+            },
+            "documentation_representation_type_description": {
+              "title": "Documentation representation type description"
+            },
+            "cfihos_unique_code": {
+              "title": "CFIHOS unique code"
+            }
+          }
+        },
+        "document_review_type": {
+          "title": "DOCUMENT REVIEW TYPE",
+          "columns": {
+            "document_review_type_code": {
+              "title": "Document review type code"
+            },
+            "document_review_type_description": {
+              "title": "Document review type description"
+            },
+            "cfihos_unique_code": {
+              "title": "CFIHOS unique code"
+            }
+          }
+        },
+        "document_revision": {
+          "title": "DOCUMENT REVISION",
+          "columns": {
+            "document_number": {
+              "title": "Document number"
+            },
+            "document_revision_code": {
+              "title": "Document revision code"
+            },
+            "document_revision_date": {
+              "title": "Document revision date"
+            },
+            "originator_company": {
+              "title": "Originator company"
+            },
+            "document_revision_author": {
+              "title": "Document revision author"
+            },
+            "document_revision_approver": {
+              "title": "Document revision approver"
+            },
+            "document_revision_file_name": {
+              "title": "Document revision file name"
+            },
+            "originator_document_number": {
+              "title": "Originator document number"
+            },
+            "originator_document_revision_code": {
+              "title": "Originator document revision code"
+            },
+            "originator_file_name": {
+              "title": "Originator file name"
+            },
+            "document_status_code": {
+              "title": "Document status code"
+            },
+            "iso_language_code": {
+              "title": "ISO language code"
+            },
+            "project_code": {
+              "title": "Project code"
+            },
+            "document_revision_comment": {
+              "title": "Document revision comment"
+            },
+            "plant_code": {
+              "title": "Plant code"
+            },
+            "export_control_classification": {
+              "title": "Export control classification"
+            },
+            "transmittal_number": {
+              "title": "Transmittal number"
+            },
+            "document_revision_recipient": {
+              "title": "Document revision recipient"
+            },
+            "actual_review_date": {
+              "title": "Actual review date"
+            },
+            "actual_approval_date": {
+              "title": "Actual approval date"
+            },
+            "actual_approved_for_design_date": {
+              "title": "Actual approved for design date"
+            },
+            "approved_for_construction_date": {
+              "title": "Approved for construction date"
+            },
+            "actual_as_built_date": {
+              "title": "Actual as built date"
+            },
+            "document_revision_physical_storage_location": {
+              "title": "Document revision physical storage location"
+            },
+            "storage_media": {
+              "title": "Storage media"
+            },
+            "project_stage": {
+              "title": "Project stage"
+            },
+            "regulatory_required_indicator": {
+              "title": "Regulatory required indicator"
+            }
+          },
+          "description": "Document revision records (operational data â empty in reference model)."
+        },
+        "document_revision_cross_reference": {
+          "title": "DOCUMENT REVISION CROSS REFERENCE",
+          "columns": {
+            "document_number": {
+              "title": "Document number"
+            },
+            "document_revision_code": {
+              "title": "Document revision code"
+            },
+            "referenced_document_number": {
+              "title": "Referenced document number"
+            },
+            "referenced_document_revision_code": {
+              "title": "Referenced document revision code"
+            }
+          }
+        },
+        "document_revision_equipment_reference": {
+          "title": "DOCUMENT REVISION EQUIPMENT REFERENCE",
+          "columns": {
+            "document_number": {
+              "title": "Document number"
+            },
+            "document_revision_code": {
+              "title": "Document revision code"
+            },
+            "equipment_code": {
+              "title": "Equipment code"
+            }
+          }
+        },
+        "document_revision_model_part_reference": {
+          "title": "DOCUMENT REVISION MODEL PART REFERENCE",
+          "columns": {
+            "document_number": {
+              "title": "Document number"
+            },
+            "document_revision_code": {
+              "title": "Document revision code"
+            },
+            "manufacturer_company_name": {
+              "title": "Manufacturer company name"
+            },
+            "model_part_name": {
+              "title": "Model part name"
+            }
+          }
+        },
+        "document_revision_plant_area_reference": {
+          "title": "DOCUMENT REVISION PLANT AREA REFERENCE",
+          "columns": {
+            "document_number": {
+              "title": "Document number"
+            },
+            "document_revision_code": {
+              "title": "Document revision code"
+            },
+            "plant_code": {
+              "title": "Plant code"
+            },
+            "area_code": {
+              "title": "Area code"
+            }
+          }
+        },
+        "document_revision_plant_reference": {
+          "title": "DOCUMENT REVISION PLANT REFERENCE",
+          "columns": {
+            "document_number": {
+              "title": "Document number"
+            },
+            "document_revision_code": {
+              "title": "Document revision code"
+            },
+            "plant_code": {
+              "title": "Plant code"
+            }
+          }
+        },
+        "document_revision_process_unit_reference": {
+          "title": "DOCUMENT REVISION PROCESS UNIT REFERENCE",
+          "columns": {
+            "document_number": {
+              "title": "Document number"
+            },
+            "document_revision_code": {
+              "title": "Document revision code"
+            },
+            "plant_code": {
+              "title": "Plant code"
+            },
+            "process_unit_code": {
+              "title": "Process unit code"
+            }
+          }
+        },
+        "document_revision_project_reference": {
+          "title": "DOCUMENT REVISION PROJECT REFERENCE",
+          "columns": {
+            "document_number": {
+              "title": "Document number"
+            },
+            "document_revision_code": {
+              "title": "Document revision code"
+            },
+            "project_code": {
+              "title": "Project code"
+            }
+          }
+        },
+        "document_revision_purchase_order_reference": {
+          "title": "DOCUMENT REVISION PURCHASE ORDER REFERENCE",
+          "columns": {
+            "document_number": {
+              "title": "Document number"
+            },
+            "document_revision_code": {
+              "title": "Document revision code"
+            },
+            "purchase_order_issuer_company_name": {
+              "title": "Purchase order issuer company_name"
+            },
+            "purchase_order_number": {
+              "title": "Purchase order number"
+            }
+          }
+        },
+        "document_revision_site_reference": {
+          "title": "DOCUMENT REVISION SITE REFERENCE",
+          "columns": {
+            "document_number": {
+              "title": "Document number"
+            },
+            "document_revision_code": {
+              "title": "Document revision code"
+            },
+            "site_code": {
+              "title": "Site code"
+            }
+          }
+        },
+        "document_revision_tag_reference": {
+          "title": "DOCUMENT REVISION TAG REFERENCE",
+          "columns": {
+            "document_number": {
+              "title": "Document number"
+            },
+            "document_revision_code": {
+              "title": "Document revision code"
+            },
+            "plant_code": {
+              "title": "Plant code"
+            },
+            "tag_name": {
+              "title": "Tag name"
+            }
+          }
+        },
+        "document_status": {
+          "title": "DOCUMENT STATUS",
+          "columns": {
+            "document_status_code": {
+              "title": "Document status code"
+            },
+            "document_status_description": {
+              "title": "Document status description"
+            },
+            "cfihos_unique_code": {
+              "title": "CFIHOS unique code"
+            }
+          }
+        },
+        "document_type": {
+          "title": "DOCUMENT TYPE",
+          "columns": {
+            "document_type_short_code": {
+              "title": "Document type short code"
+            },
+            "document_type_name": {
+              "title": "Document type name"
+            },
+            "document_type_description": {
+              "title": "Document type description"
+            },
+            "document_type_classification": {
+              "title": "Document type classification"
+            },
+            "cfihos_unique_code": {
+              "title": "CFIHOS unique code"
+            }
+          },
+          "description": "Types of engineering documents (e.g. Datasheet, Drawing, Certificate). Classified by document type classification."
+        },
+        "document_type_classification": {
+          "title": "DOCUMENT TYPE CLASSIFICATION",
+          "columns": {
+            "document_type_classification_code": {
+              "title": "Document type classification code"
+            },
+            "document_type_classification_description": {
+              "title": "Document type classification description"
+            },
+            "cfihos_unique_code": {
+              "title": "CFIHOS unique code"
+            }
+          }
+        },
+        "engineering_status": {
+          "title": "ENGINEERING STATUS",
+          "columns": {
+            "engineering_status_code": {
+              "title": "Engineering status code"
+            },
+            "engineering_status_description": {
+              "title": "Engineering status description"
+            },
+            "cfihos_unique_code": {
+              "title": "CFIHOS unique code"
+            }
+          }
+        },
+        "entity": {
+          "title": "ENTITY",
+          "columns": {
+            "section": {
+              "title": "Section"
+            },
+            "name": {
+              "title": "Name"
+            },
+            "definition": {
+              "title": "Definition"
+            },
+            "note_comment": {
+              "title": "Note / comment"
+            },
+            "data_source": {
+              "title": "Data source"
+            },
+            "cfihos_unique_code": {
+              "title": "CFIHOS unique code"
+            }
+          },
+          "description": "Data dictionary entities â the logical objects defined in the CFIHOS information model."
+        },
+        "entity_attribute": {
+          "title": "ENTITY_ATTRIBUTE",
+          "columns": {
+            "name": {
+              "title": "Name"
+            },
+            "definition": {
+              "title": "Definition"
+            },
+            "note_comment": {
+              "title": "Note / comment"
+            },
+            "example": {
+              "title": "Example"
+            },
+            "format": {
+              "title": "Format"
+            },
+            "cfihos_unique_code": {
+              "title": "CFIHOS unique code"
+            }
+          },
+          "description": "Attributes of data dictionary entities."
+        },
+        "entity_attribute_relationship": {
+          "title": "ENTITY_ATTRIBUTE_RELATIONSHIP",
+          "columns": {
+            "entity_name": {
+              "title": "Entity name"
+            },
+            "attribute_name": {
+              "title": "Attribute name"
+            },
+            "entity_attribute_name": {
+              "title": "Entity attribute name"
+            },
+            "entity_attribute_definition": {
+              "title": "Entity attribute definition"
+            },
+            "note_comment": {
+              "title": "Note / comment"
+            },
+            "identifier_mandatory_optional": {
+              "title": "Identifier / mandatory / optional"
+            },
+            "constraint_must_be_present_in": {
+              "title": "Constraint must be present in"
+            },
+            "entity_cfihos_unique_code": {
+              "title": "Entity CFIHOS unique code"
+            },
+            "attribute_cfihos_unique_code": {
+              "title": "Attribute CFIHOS unique code"
+            }
+          },
+          "description": "Relationships between entities and their attributes, including mandatory/optional status."
+        },
+        "equipment": {
+          "title": "EQUIPMENT",
+          "columns": {
+            "equipment_code": {
+              "title": "Equipment code"
+            },
+            "plant_code": {
+              "title": "Plant code"
+            },
+            "tag_name": {
+              "title": "Tag name"
+            },
+            "equipment_class_name": {
+              "title": "Equipment class name"
+            },
+            "manufacturer_company_name": {
+              "title": "Manufacturer company name"
+            },
+            "model_part_name": {
+              "title": "Model part name"
+            },
+            "equipment_manufacturer_serial_number": {
+              "title": "Equipment manufacturer serial number"
+            },
+            "equipment_actual_purchase_date": {
+              "title": "Equipment actual purchase date"
+            },
+            "vendor_company_name": {
+              "title": "Vendor company name"
+            },
+            "equipment_actual_installation_date": {
+              "title": "Equipment actual installation date"
+            },
+            "equipment_actual_startup_date": {
+              "title": "Equipment actual startup date"
+            },
+            "equipment_price": {
+              "title": "Equipment price"
+            },
+            "iso_currency_code": {
+              "title": "ISO currency code"
+            },
+            "equipment_warranty_end_date": {
+              "title": "Equipment warranty end date"
+            },
+            "purchase_order_issuer_company_name": {
+              "title": "Purchase order issuer company name"
+            },
+            "purchase_order_number": {
+              "title": "Purchase order number"
+            },
+            "purchase_order_item_number": {
+              "title": "Purchase order item number"
+            }
+          },
+          "description": "Individual equipment instances (operational data â empty in reference model)."
+        },
+        "equipment_class": {
+          "title": "EQUIPMENT CLASS",
+          "columns": {
+            "abstract_class_flag": {
+              "title": "Abstract class flag"
+            },
+            "spare_part_info_required": {
+              "title": "Spare part info required"
+            },
+            "parent_equipment_class_name": {
+              "title": "Parent equipment class name"
+            },
+            "equipment_class_name": {
+              "title": "Equipment class name"
+            },
+            "equipment_class_definition": {
+              "title": "Equipment class definition"
+            },
+            "reason_for_having_class": {
+              "title": "Reason for having class"
+            },
+            "cfihos_unique_code": {
+              "title": "CFIHOS unique code"
+            },
+            "synonym": {
+              "title": "Synonym"
+            }
+          },
+          "description": "Defines the classification hierarchy for physical equipment. Mirrors the tag class structure for the physical/equipment domain."
+        },
+        "equipment_class_property": {
+          "title": "EQUIPMENT CLASS PROPERTY",
+          "columns": {
+            "property_relevant_for_equipment_indicator": {
+              "title": "Property relevant for equipment indicator"
+            },
+            "property_relevant_for_model_part_indicator": {
+              "title": "Property relevant for model / part indicator"
+            },
+            "equipment_class_name": {
+              "title": "Equipment class name"
+            },
+            "equipment_property_name": {
+              "title": "Equipment property name"
+            },
+            "si_unit_of_measure_name": {
+              "title": "SI unit of measure name"
+            },
+            "imperial_unit_of_measure_code": {
+              "title": "Imperial unit of measure code"
+            }
+          },
+          "description": "Properties assigned to equipment classes."
+        },
+        "equipment_property": {
+          "title": "EQUIPMENT PROPERTY",
+          "columns": {
+            "equipment_code": {
+              "title": "Equipment code"
+            },
+            "property_name": {
+              "title": "Property name"
+            },
+            "equipment_property_value": {
+              "title": "Equipment property value"
+            },
+            "unit_of_measure_code": {
+              "title": "Unit of measure code"
+            },
+            "reason_for_deviating_from_standard_unit_of_measure": {
+              "title": "Reason for deviating from standard unit of measure"
+            }
+          }
+        },
+        "event_type": {
+          "title": "EVENT TYPE",
+          "columns": {
+            "event_type_code": {
+              "title": "Event type code"
+            },
+            "event_type_name": {
+              "title": "Event type name"
+            },
+            "cfihos_unique_code": {
+              "title": "CFIHOS unique code"
+            }
+          }
+        },
+        "export_control_classification": {
+          "title": "EXPORT CONTROL CLASSIFICATION",
+          "columns": {
+            "export_control_classification_code": {
+              "title": "Export control classification code"
+            },
+            "export_control_classification_description": {
+              "title": "Export control classification description"
+            }
+          }
+        },
+        "handover_event": {
+          "title": "HANDOVER EVENT",
+          "columns": {
+            "handover_event_reporting_sequence_number": {
+              "title": "Handover event reporting sequence_number"
+            },
+            "handover_event_name": {
+              "title": "Handover event name"
+            },
+            "handover_event_description": {
+              "title": "Handover event description"
+            },
+            "cfihos_unique_code": {
+              "title": "CFIHOS unique code"
+            }
+          },
+          "description": "Project lifecycle events at which documents must be handed over (e.g. Mechanical Completion, Final Acceptance)."
+        },
+        "industrial_complex": {
+          "title": "INDUSTRIAL COMPLEX",
+          "columns": {
+            "industrial_complex_code": {
+              "title": "Industrial complex code"
+            },
+            "industrial_complex_name": {
+              "title": "Industrial complex name"
+            },
+            "site_name": {
+              "title": "Site name"
+            }
+          }
+        },
+        "iso_country": {
+          "title": "ISO COUNTRY",
+          "columns": {
+            "iso_country_code": {
+              "title": "ISO country code"
+            },
+            "iso_country_name": {
+              "title": "ISO country name"
+            },
+            "cfihos_unique_code": {
+              "title": "CFIHOS unique code"
+            }
+          },
+          "description": "ISO 3166-1 country codes and names."
+        },
+        "iso_currency": {
+          "title": "ISO CURRENCY",
+          "columns": {
+            "iso_currency_code": {
+              "title": "ISO currency code"
+            },
+            "iso_currency_name": {
+              "title": "ISO currency name"
+            },
+            "cfihos_unique_code": {
+              "title": "CFIHOS unique code"
+            }
+          },
+          "description": "ISO 4217 currency codes and names."
+        },
+        "iso_language": {
+          "title": "ISO LANGUAGE",
+          "columns": {
+            "iso_language_code": {
+              "title": "ISO language code"
+            },
+            "iso_language_name": {
+              "title": "ISO language name"
+            },
+            "cfihos_unique_code": {
+              "title": "CFIHOS unique code"
+            }
+          },
+          "description": "ISO 639-1 language codes and names."
+        },
+        "leaf_node_commissioning_unit": {
+          "title": "LEAF NODE COMMISSIONING UNIT",
+          "columns": {
+            "plant_code": {
+              "title": "Plant code"
+            },
+            "commissioning_unit_code": {
+              "title": "Commissioning unit code"
+            }
+          }
+        },
+        "life_cycle_activity_class": {
+          "title": "LIFE CYCLE ACTIVITY CLASS",
+          "columns": {
+            "life_cycle_activity_class_code": {
+              "title": "Life cycle activity class code"
+            },
+            "life_cycle_activity_class_description": {
+              "title": "Life cycle activity class description"
+            },
+            "cfihos_unique_code": {
+              "title": "CFIHOS unique code"
+            }
+          }
+        },
+        "maintenance_system": {
+          "title": "MAINTENANCE SYSTEM",
+          "columns": {
+            "plant_code": {
+              "title": "Plant code"
+            },
+            "maintenance_unit_code": {
+              "title": "Maintenance unit code"
+            },
+            "maintenance_system_code": {
+              "title": "Maintenance system code"
+            },
+            "maintenance_system_name": {
+              "title": "Maintenance system name"
+            },
+            "maintenance_system_actual_startup_date": {
+              "title": "Maintenance system actual startup date"
+            }
+          }
+        },
+        "maintenance_unit": {
+          "title": "MAINTENANCE UNIT",
+          "columns": {
+            "plant_code": {
+              "title": "Plant code"
+            },
+            "maintenance_unit_code": {
+              "title": "Maintenance unit code"
+            },
+            "maintenance_unit_name": {
+              "title": "Maintenance unit name"
+            }
+          }
+        },
+        "measurement_system": {
+          "title": "MEASUREMENT SYSTEM",
+          "columns": {
+            "measurement_system_code": {
+              "title": "Measurement system code"
+            },
+            "measurement_system_name": {
+              "title": "Measurement system name"
+            },
+            "cfihos_unique_code": {
+              "title": "CFIHOS unique code"
+            }
+          },
+          "description": "Measurement systems (SI and Imperial)."
+        },
+        "model_part": {
+          "title": "MODEL PART",
+          "columns": {
+            "manufacturer_company_name": {
+              "title": "Manufacturer company name"
+            },
+            "model_part_name": {
+              "title": "Model part name"
+            },
+            "model_part_description": {
+              "title": "Model part description"
+            },
+            "equipment_class_name": {
+              "title": "Equipment class name"
+            }
+          }
+        },
+        "model_part_property": {
+          "title": "MODEL PART PROPERTY",
+          "columns": {
+            "manufacturer_company_name": {
+              "title": "Manufacturer company name"
+            },
+            "model_part_name": {
+              "title": "Model part name"
+            },
+            "property_name": {
+              "title": "Property name"
+            },
+            "model_part_property_value": {
+              "title": "Model part property value"
+            },
+            "unit_of_measure_code": {
+              "title": "Unit of measure code"
+            },
+            "reason_for_deviating_from_standard_unit_of_measure": {
+              "title": "Reason for deviating from standard unit of measure"
+            }
+          }
+        },
+        "native_file_delivery_timing": {
+          "title": "NATIVE FILE DELIVERY TIMING",
+          "columns": {
+            "native_file_delivery_timing_code": {
+              "title": "Native file delivery timing code"
+            },
+            "native_file_delivery_timing_description": {
+              "title": "Native file delivery timing description"
+            },
+            "cfihos_unique_code": {
+              "title": "CFIHOS unique code"
+            }
+          }
+        },
+        "non_abstract_tag_or_equipment_class": {
+          "title": "NON ABSTRACT TAG OR EQUIPMENT CLASS",
+          "columns": {
+            "tag_or_equipment_class_name": {
+              "title": "Tag or equipment class name"
+            }
+          }
+        },
+        "plant": {
+          "title": "PLANT",
+          "columns": {
+            "plant_code": {
+              "title": "Plant code"
+            },
+            "plant_name": {
+              "title": "Plant name"
+            },
+            "site_code": {
+              "title": "Site code"
+            },
+            "iso_language_code": {
+              "title": "ISO language code"
+            },
+            "measurement_system_code": {
+              "title": "Measurement system code"
+            },
+            "industrial_complex_code": {
+              "title": "Industrial complex code"
+            }
+          }
+        },
+        "process_activity": {
+          "title": "PROCESS ACTIVITY",
+          "columns": {
+            "process_activity_code": {
+              "title": "Process activity code"
+            },
+            "parent_process_activity_code": {
+              "title": "Parent process activity code"
+            },
+            "process_activity_description": {
+              "title": "Process activity description"
+            },
+            "process_class_name": {
+              "title": "Process class name"
+            }
+          }
+        },
+        "process_activity_in_case": {
+          "title": "PROCESS ACTIVITY IN CASE",
+          "columns": {
+            "process_case_number": {
+              "title": "Process case number"
+            },
+            "process_activity_code": {
+              "title": "Process activity code"
+            }
+          }
+        },
+        "process_activity_tag_relationship": {
+          "title": "PROCESS ACTIVITY TAG RELATIONSHIP",
+          "columns": {
+            "process_activity_code": {
+              "title": "Process activity code"
+            },
+            "plant_code": {
+              "title": "Plant code"
+            },
+            "tag_name": {
+              "title": "Tag name"
+            }
+          }
+        },
+        "process_case": {
+          "title": "PROCESS CASE",
+          "columns": {
+            "process_case_number": {
+              "title": "Process case number"
+            },
+            "process_case_description": {
+              "title": "Process case description"
+            },
+            "application_condition_group_code": {
+              "title": "Application condition group code"
+            }
+          }
+        },
+        "process_class": {
+          "title": "PROCESS CLASS",
+          "columns": {
+            "process_class_name": {
+              "title": "Process class name"
+            },
+            "process_class_definition": {
+              "title": "Process class definition"
+            },
+            "cfihos_unique_code": {
+              "title": "CFIHOS unique code"
+            }
+          }
+        },
+        "process_class_property": {
+          "title": "PROCESS CLASS PROPERTY",
+          "columns": {
+            "process_class_name": {
+              "title": "Process class name"
+            },
+            "property_name": {
+              "title": "Property name"
+            },
+            "si_unit_of_measure_code": {
+              "title": "SI unit of measure code"
+            },
+            "imperial_unit_of_measure_code": {
+              "title": "Imperial unit of measure code"
+            }
+          }
+        },
+        "process_class_tag_class_relationship": {
+          "title": "PROCESS CLASS TAG CLASS RELATIONSHIP",
+          "columns": {
+            "process_class_name": {
+              "title": "Process class name"
+            },
+            "tag_class_name": {
+              "title": "Tag class name"
+            }
+          }
+        },
+        "process_design_property": {
+          "title": "PROCESS DESIGN PROPERTY",
+          "columns": {
+            "process_activity_code": {
+              "title": "Process activity code"
+            },
+            "property_name": {
+              "title": "Property name"
+            },
+            "process_design_property_value": {
+              "title": "Process design property value"
+            },
+            "unit_of_measure_code": {
+              "title": "Unit of measure code"
+            }
+          }
+        },
+        "process_property_in_case": {
+          "title": "PROCESS PROPERTY IN CASE",
+          "columns": {
+            "process_case_number": {
+              "title": "Process case number"
+            },
+            "process_activity_code": {
+              "title": "Process activity code"
+            },
+            "property_name": {
+              "title": "Property name"
+            },
+            "process_property_value_in_case": {
+              "title": "Process property value in case"
+            },
+            "unit_of_measure_code": {
+              "title": "Unit of measure code"
+            }
+          }
+        },
+        "process_stream": {
+          "title": "PROCESS STREAM",
+          "columns": {
+            "process_stream_code": {
+              "title": "Process stream code"
+            },
+            "process_stream_description": {
+              "title": "Process stream description"
+            },
+            "output_of_process_activity_code": {
+              "title": "Output of process activity code"
+            },
+            "input_of_process_activity_code": {
+              "title": "Input of process activity code"
+            },
+            "stream_class_code": {
+              "title": "Stream class code"
+            }
+          }
+        },
+        "process_stream_in_case": {
+          "title": "PROCESS STREAM IN CASE",
+          "columns": {
+            "process_case_number": {
+              "title": "Process case number"
+            },
+            "process_stream_code": {
+              "title": "Process stream code"
+            }
+          }
+        },
+        "process_stream_property": {
+          "title": "PROCESS STREAM PROPERTY",
+          "columns": {
+            "process_stream_code": {
+              "title": "Process stream code"
+            },
+            "property_name": {
+              "title": "Property name"
+            },
+            "process_stream_property_value": {
+              "title": "Process stream property value"
+            },
+            "unit_of_measure_code": {
+              "title": "Unit of measure code"
+            }
+          }
+        },
+        "process_stream_property_in_case": {
+          "title": "PROCESS STREAM PROPERTY IN CASE",
+          "columns": {
+            "process_case_number": {
+              "title": "Process case number"
+            },
+            "process_stream_code": {
+              "title": "Process stream code"
+            },
+            "property_name": {
+              "title": "Property name"
+            },
+            "process_stream_property_value_in_case": {
+              "title": "Process stream property value in case"
+            },
+            "unit_of_measure_code": {
+              "title": "Unit of measure code"
+            }
+          }
+        },
+        "process_unit": {
+          "title": "PROCESS UNIT",
+          "columns": {
+            "plant_code": {
+              "title": "Plant code"
+            },
+            "process_unit_code": {
+              "title": "Process unit code"
+            },
+            "process_unit_name": {
+              "title": "Process unit name"
+            }
+          }
+        },
+        "project": {
+          "title": "PROJECT",
+          "columns": {
+            "project_code": {
+              "title": "Project code"
+            },
+            "project_name": {
+              "title": "Project name"
+            }
+          }
+        },
+        "project_stage": {
+          "title": "PROJECT STAGE",
+          "columns": {
+            "project_stage_code": {
+              "title": "Project stage code"
+            },
+            "project_stage_name": {
+              "title": "Project stage name"
+            }
+          }
+        },
+        "property": {
+          "title": "PROPERTY",
+          "columns": {
+            "property_name": {
+              "title": "Property name"
+            },
+            "property_definition": {
+              "title": "Property definition"
+            },
+            "property_data_type": {
+              "title": "Property data type"
+            },
+            "property_data_type_length": {
+              "title": "Property data type length"
+            },
+            "property_existence_reason_description": {
+              "title": "Property existence reason description"
+            },
+            "unit_of_measure_dimension_code": {
+              "title": "Unit_of measure dimension code"
+            },
+            "property_picklist_name": {
+              "title": "Property picklist name"
+            },
+            "cfihos_unique_code": {
+              "title": "CFIHOS unique code"
+            }
+          },
+          "description": "Master list of all properties (attributes) that can be assigned to tag or equipment classes. Includes data type, unit of measure dimension, and picklist reference."
+        },
+        "property_group": {
+          "title": "PROPERTY GROUP",
+          "columns": {
+            "property_group_code": {
+              "title": "Property group code"
+            },
+            "property_group_description": {
+              "title": "Property group description"
+            },
+            "parent_group_code": {
+              "title": "Parent group code"
+            },
+            "source_standard_code": {
+              "title": "Source standard code"
+            },
+            "cfihos_unique_code": {
+              "title": "CFIHOS unique code"
+            }
+          },
+          "description": "Groups of properties for organisational purposes, forming a hierarchy via parent_group_code."
+        },
+        "property_group_allowed_for_purpose": {
+          "title": "PROPERTY GROUP ALLOWED FOR PURPOSE",
+          "columns": {
+            "property_grouping_purpose_code": {
+              "title": "Property grouping purpose code"
+            },
+            "property_group_code": {
+              "title": "Property group code"
+            },
+            "cfihos_unique_code": {
+              "title": "CFIHOS unique code"
+            }
+          }
+        },
+        "property_grouping_or_decomposition_purpose": {
+          "title": "PROPERTY GROUPING OR DECOMPOSITION PURPOSE",
+          "columns": {
+            "property_grouping_purpose_code": {
+              "title": "Property grouping purpose code"
+            },
+            "property_grouping_purpose_description": {
+              "title": "Property grouping purpose description"
+            },
+            "cfihos_unique_code": {
+              "title": "CFIHOS unique code"
+            }
+          }
+        },
+        "property_picklist": {
+          "title": "PROPERTY PICKLIST",
+          "columns": {
+            "property_picklist_name": {
+              "title": "Property picklist name"
+            },
+            "cfihos_unique_code": {
+              "title": "CFIHOS unique code"
+            }
+          },
+          "description": "Named picklists for qualitative properties that have a fixed set of allowed values."
+        },
+        "property_picklist_value": {
+          "title": "PROPERTY PICKLIST VALUE",
+          "columns": {
+            "property_picklist_name": {
+              "title": "Property picklist name"
+            },
+            "property_picklist_value_code": {
+              "title": "Property picklist value code"
+            },
+            "property_picklist_value_description": {
+              "title": "Property picklist value description"
+            },
+            "cfihos_unique_code": {
+              "title": "CFIHOS unique code"
+            }
+          },
+          "description": "Individual values within each property picklist."
+        },
+        "property_picklist_value_source_standard": {
+          "title": "PROPERTY PICKLIST VALUE SOURCE STANDARD",
+          "columns": {
+            "property_picklist_name": {
+              "title": "Property picklist name"
+            },
+            "property_picklist_value_code": {
+              "title": "Property picklist value code"
+            },
+            "source_standard_code": {
+              "title": "Source standard code"
+            }
+          },
+          "description": "Links picklist values to the source standards that define them."
+        },
+        "property_to_group_assignment": {
+          "title": "PROPERTY TO GROUP ASSIGNMENT",
+          "columns": {
+            "property_sequence_number": {
+              "title": "Property sequence number"
+            },
+            "tag_or_equipment_class_name": {
+              "title": "Tag or equipment class name"
+            },
+            "property_name": {
+              "title": "Property name"
+            },
+            "property_grouping_purpose_code": {
+              "title": "Property grouping purpose code"
+            },
+            "property_group_code": {
+              "title": "Property group code"
+            },
+            "cfihos_unique_code": {
+              "title": "CFIHOS unique code"
+            }
+          },
+          "description": "Assigns properties to property groups for a specific tag/equipment class and grouping purpose."
+        },
+        "purchase_order": {
+          "title": "PURCHASE ORDER",
+          "columns": {
+            "purchase_order_date": {
+              "title": "Purchase order date"
+            },
+            "purchase_order_issuer_company_name": {
+              "title": "Purchase order issuer company name"
+            },
+            "purchase_order_number": {
+              "title": "Purchase order number"
+            },
+            "purchase_order_description": {
+              "title": "Purchase order description"
+            },
+            "purchase_order_receiver_company_name": {
+              "title": "Purchase order receiver company name"
+            }
+          }
+        },
+        "purchase_order_item": {
+          "title": "PURCHASE ORDER ITEM",
+          "columns": {
+            "purchase_order_issuer_company_name": {
+              "title": "Purchase order issuer company name"
+            },
+            "purchase_order_number": {
+              "title": "Purchase order number"
+            },
+            "purchase_order_item_number": {
+              "title": "Purchase order item number"
+            },
+            "purchase_order_item_description": {
+              "title": "Purchase order item description"
+            },
+            "manufacturer_company_name": {
+              "title": "Manufacturer company name"
+            },
+            "model_part_name": {
+              "title": "Model part name"
+            },
+            "purchase_order_item_initial_expected_delivery_date": {
+              "title": "Purchase order item initial expected delivery date"
+            },
+            "purchase_order_item_latest_revised_delivery_date": {
+              "title": "Purchase order item latest revised delivery date"
+            },
+            "purchase_order_item_quantity": {
+              "title": "Purchase order item quantity"
+            },
+            "unit_of_measure_code": {
+              "title": "Unit of measure code"
+            }
+          }
+        },
+        "purchase_order_item_expected_event": {
+          "title": "PURCHASE ORDER ITEM EXPECTED EVENT",
+          "columns": {
+            "purchase_order_issuer_company_name": {
+              "title": "Purchase order issuer company name"
+            },
+            "purchase_order_number": {
+              "title": "Purchase order number"
+            },
+            "purchase_order_item_number": {
+              "title": "Purchase order item number"
+            },
+            "event_type_code": {
+              "title": "Event type code"
+            },
+            "purchase_order_item_event_original_estimated_date": {
+              "title": "Purchase order item event original estimated date"
+            },
+            "purchase_order_item_event_latest_revised_date": {
+              "title": "Purchase order item event latest revised date"
+            }
+          }
+        },
+        "purchase_order_item_for_bulk": {
+          "title": "PURCHASE ORDER ITEM FOR BULK",
+          "columns": {
+            "purchase_order_issuer_company_name": {
+              "title": "Purchase order issuer company_name"
+            },
+            "purchase_order_number": {
+              "title": "Purchase order number"
+            },
+            "purchase_order_item_number": {
+              "title": "Purchase order item number"
+            }
+          }
+        },
+        "purchase_order_item_for_model_part": {
+          "title": "PURCHASE ORDER ITEM FOR MODEL PART",
+          "columns": {
+            "purchase_order_issuer_company_name": {
+              "title": "Purchase order issuer company_name"
+            },
+            "purchase_order_number": {
+              "title": "Purchase order number"
+            },
+            "purchase_order_item_number": {
+              "title": "Purchase order item number"
+            },
+            "manufacturer_company_name": {
+              "title": "Manufacturer company name"
+            },
+            "model_part_name": {
+              "title": "Model part name"
+            }
+          }
+        },
+        "purchase_order_item_for_tag": {
+          "title": "PURCHASE ORDER ITEM FOR TAG",
+          "columns": {
+            "purchase_order_issuer_company_name": {
+              "title": "Purchase order issuer company_name"
+            },
+            "purchase_order_number": {
+              "title": "Purchase order number"
+            },
+            "purchase_order_item_number": {
+              "title": "Purchase order item number"
+            },
+            "plant_code": {
+              "title": "Plant code"
+            },
+            "tag_name": {
+              "title": "Tag name"
+            }
+          }
+        },
+        "purchase_order_item_vendor_document_and_data_requirement": {
+          "title": "PURCHASE ORDER ITEM VENDOR DOCUMENT AND DATA REQUIREMENT",
+          "columns": {
+            "purchase_order_issuer_company_name": {
+              "title": "Purchase order issuer company name"
+            },
+            "purchase_order_number": {
+              "title": "Purchase order number"
+            },
+            "purchase_order_item_number": {
+              "title": "Purchase order item number"
+            },
+            "purchase_order_vendor_document_and_data_requirement_number": {
+              "title": "Purchase order vendor document and data requirement number"
+            },
+            "source_standard_code": {
+              "title": "Source standard code"
+            },
+            "source_standard_document_and_data_requirement_number": {
+              "title": "Source standard document and data requirement number"
+            },
+            "submit_at_proposal_indicator": {
+              "title": "Submit at proposal indicator"
+            },
+            "submit_for_review_indicator": {
+              "title": "Submit for review indicator"
+            },
+            "submit_at_delivery_indicator": {
+              "title": "Submit at delivery indicator"
+            },
+            "date_required_for_information_sharing": {
+              "title": "Date required for information sharing"
+            },
+            "date_required_for_final_review": {
+              "title": "Date required for final review"
+            },
+            "date_required_for_approval": {
+              "title": "Date required for approval"
+            },
+            "required_hand_over_status_code": {
+              "title": "Required hand over status code"
+            },
+            "translation_required_indicator": {
+              "title": "Translation required indicator"
+            },
+            "purchaser_comment": {
+              "title": "Purchaser comment"
+            },
+            "contractor_comment": {
+              "title": "Contractor comment"
+            },
+            "vendor_comment": {
+              "title": "Vendor comment"
+            },
+            "document_number": {
+              "title": "Document number"
+            }
+          }
+        },
+        "qualitative_property": {
+          "title": "QUALITATIVE PROPERTY",
+          "columns": {
+            "property_name": {
+              "title": "Property name"
+            },
+            "property_data_type_length": {
+              "title": "Property data type length"
+            },
+            "property_picklist_name": {
+              "title": "Property picklist name"
+            }
+          }
+        },
+        "quantitative_property": {
+          "title": "QUANTITATIVE PROPERTY",
+          "columns": {
+            "property_name": {
+              "title": "Property name"
+            },
+            "unit_of_measure_dimension_code": {
+              "title": "Unit of measure dimension code"
+            }
+          }
+        },
+        "reason_for_issue": {
+          "title": "REASON FOR ISSUE",
+          "columns": {
+            "reason_for_issue_code": {
+              "title": "Reason for issue code"
+            },
+            "reason_for_issue_description": {
+              "title": "Reason for issue description"
+            }
+          }
+        },
+        "safety_critical_item_group": {
+          "title": "SAFETY CRITICAL ITEM GROUP",
+          "columns": {
+            "safety_critical_item_group_code": {
+              "title": "Safety critical item group code"
+            },
+            "safety_critical_item_group_description": {
+              "title": "Safety critical item group description"
+            },
+            "cfihos_unique_code": {
+              "title": "CFIHOS unique code"
+            }
+          }
+        },
+        "site": {
+          "title": "SITE",
+          "columns": {
+            "site_code": {
+              "title": "Site code"
+            },
+            "site_name": {
+              "title": "Site name"
+            },
+            "measurement_system_code": {
+              "title": "Measurement system code"
+            }
+          }
+        },
+        "source_standard": {
+          "title": "SOURCE STANDARD",
+          "columns": {
+            "source_standard_code": {
+              "title": "Source standard code"
+            },
+            "source_standard_description": {
+              "title": "Source standard description"
+            },
+            "source_standard_still_to_be_completed_indicator": {
+              "title": "Source standard still to be completed indicator"
+            },
+            "cfihos_unique_code": {
+              "title": "CFIHOS unique code"
+            }
+          },
+          "description": "Reference list of all source standards (e.g. ISO, IEC, JIP33 specifications) referenced in the data model."
+        },
+        "source_standard_document_and_data_requirement": {
+          "title": "SOURCE STANDARD DOCUMENT AND DATA REQUIREMENT",
+          "columns": {
+            "default_issue_for_review_number_of_weeks": {
+              "title": "Default issue for review number of weeks"
+            },
+            "default_issue_for_approval_number_of_weeks": {
+              "title": "Default issue for approval number of weeks"
+            },
+            "default_for_information_number_of_weeks": {
+              "title": "Default for information number of weeks"
+            },
+            "source_standard_code": {
+              "title": "Source standard code"
+            },
+            "source_standard_document_and_data_requirement_number": {
+              "title": "Source standard document and data requirement number"
+            },
+            "source_standard_document_and_data_requirement_title": {
+              "title": "Source standard document and data requirement title"
+            },
+            "source_standard_typical_deliverable": {
+              "title": "Source standard typical deliverable"
+            },
+            "source_standard_document_and_data_requirement_description": {
+              "title": "Source standard document and data requirement description"
+            },
+            "source_standard_document_and_data_requirement_comment": {
+              "title": "Source standard document and data requirement comment"
+            },
+            "document_and_data_requirement_type_code": {
+              "title": "Document and data requirement type code"
+            },
+            "document_and_data_requirement_group_code": {
+              "title": "Document and data requirement group code"
+            },
+            "engineering_standard_source_chapter": {
+              "title": "Engineering standard source chapter"
+            },
+            "discipline_code": {
+              "title": "Discipline code"
+            },
+            "document_type_short_code": {
+              "title": "Document type short code"
+            },
+            "default_submit_at_proposal_indicator": {
+              "title": "Default submit at proposal indicator"
+            },
+            "default_submit_for_review_indicator": {
+              "title": "Default submit for review indicator"
+            },
+            "default_submit_at_delivery_indicator": {
+              "title": "Default submit at delivery indicator"
+            },
+            "default_issue_for_review_reference_date": {
+              "title": "Default issue for review reference date"
+            },
+            "default_issue_for_approval_reference_date": {
+              "title": "Default issue for approval reference date"
+            },
+            "default_for_information_reference_date": {
+              "title": "Default for information reference date"
+            },
+            "default_required_handover_status_code": {
+              "title": "Default required handover status code"
+            },
+            "default_required_translation_indicator": {
+              "title": "Default required translation indicator"
+            },
+            "deliverable_format_code": {
+              "title": "Deliverable format code"
+            },
+            "cfihos_unique_code": {
+              "title": "CFIHOS unique code"
+            }
+          },
+          "description": "Document and data requirements defined by each source standard â what documents must be produced, when, and in what format."
+        },
+        "source_standard_document_and_data_requirement_condition": {
+          "title": "SOURCE STANDARD DOCUMENT AND DATA REQUIREMENT CONDITION",
+          "columns": {
+            "source_standard_code": {
+              "title": "Source standard code"
+            },
+            "source_standard_document_and_data_requirement_number": {
+              "title": "Source standard document and data requirement_number"
+            },
+            "application_condition_code": {
+              "title": "Application condition code"
+            },
+            "application_condition_value": {
+              "title": "Application condition value"
+            },
+            "source_standard_inclusion_indicator": {
+              "title": "Source standard inclusion indicator"
+            },
+            "cfihos_unique_code": {
+              "title": "CFIHOS unique code"
+            }
+          }
+        },
+        "spare_part_interchangeability_record": {
+          "title": "SPARE PART INTERCHANGEABILITY RECORD",
+          "columns": {
+            "spir_reference": {
+              "title": "SPIR reference"
+            },
+            "purchase_order_issuer_company_name": {
+              "title": "Purchase order issuer company name"
+            },
+            "purchase_order_number": {
+              "title": "Purchase order number"
+            },
+            "purchase_order_receiver_company_name": {
+              "title": "Purchase order receiver company name"
+            },
+            "spir_contact_person": {
+              "title": "SPIR contact person"
+            },
+            "commercial_conditions": {
+              "title": "Commercial conditions"
+            }
+          }
+        },
+        "spare_part_interchangeability_record_advice": {
+          "title": "SPARE PART INTERCHANGEABILITY RECORD ADVICE",
+          "columns": {
+            "number_of_commissioning_spares": {
+              "title": "Number of commissioning spares"
+            },
+            "number_of_initial_spares": {
+              "title": "Number of initial spares"
+            },
+            "number_of_normal_operating_spares": {
+              "title": "Number of normal operating spares"
+            },
+            "spir_reference": {
+              "title": "SPIR reference"
+            },
+            "manufacturer_company_name": {
+              "title": "Manufacturer company name"
+            },
+            "model_part_name": {
+              "title": "Model part name"
+            },
+            "spir_model_part_type": {
+              "title": "SPIR model part type"
+            }
+          }
+        },
+        "spare_part_interchangeability_record_commercial_details": {
+          "title": "SPARE PART INTERCHANGEABILITY RECORD COMMERCIAL DETAILS",
+          "columns": {
+            "quoted_price": {
+              "title": "Quoted price"
+            },
+            "quoted_delivery_time": {
+              "title": "Quoted delivery time"
+            },
+            "spir_reference": {
+              "title": "SPIR reference"
+            },
+            "manufacturer_company_name": {
+              "title": "Manufacturer company name"
+            },
+            "model_part_name": {
+              "title": "Model part name"
+            },
+            "purchase_quantity_unit_of_measure_name": {
+              "title": "Purchase quantity unit of measure name"
+            },
+            "quoted_price_iso_currency_code": {
+              "title": "Quoted price iso currency code"
+            },
+            "quoted_delivery_time_unit_of_measure_name": {
+              "title": "Quoted delivery time unit of measure name"
+            }
+          }
+        },
+        "spare_part_interchangeability_record_equipment": {
+          "title": "SPARE PART INTERCHANGEABILITY RECORD EQUIPMENT",
+          "columns": {
+            "number_of_units_procured": {
+              "title": "Number of units procured"
+            },
+            "number_of_parts_per_unit": {
+              "title": "Number of parts per unit"
+            },
+            "spir_reference": {
+              "title": "SPIR reference"
+            },
+            "equipment_description": {
+              "title": "Equipment description"
+            },
+            "plant_code": {
+              "title": "Plant code"
+            },
+            "tag_name": {
+              "title": "Tag name"
+            },
+            "parent_equipment_description": {
+              "title": "Parent equipment description"
+            }
+          }
+        },
+        "storage_media": {
+          "title": "STORAGE MEDIA",
+          "columns": {
+            "storage_media_code": {
+              "title": "Storage media code"
+            },
+            "storage_media_description": {
+              "title": "Storage media description"
+            },
+            "cfihos_unique_code": {
+              "title": "CFIHOS unique code"
+            }
+          }
+        },
+        "stream_class": {
+          "title": "STREAM CLASS",
+          "columns": {
+            "stream_class_code": {
+              "title": "Stream class code"
+            },
+            "stream_class_description": {
+              "title": "Stream class description"
+            },
+            "parent_stream_class_code": {
+              "title": "Parent stream class code"
+            },
+            "cfihos_unique_code": {
+              "title": "CFIHOS unique code"
+            }
+          }
+        },
+        "stream_class_property": {
+          "title": "STREAM CLASS PROPERTY",
+          "columns": {
+            "stream_class_code": {
+              "title": "Stream class code"
+            },
+            "property_name": {
+              "title": "Property name"
+            },
+            "si_unit_of_measure_code": {
+              "title": "SI unit of measure code"
+            },
+            "imperial_unit_of_measure_code": {
+              "title": "Imperial unit of measure code"
+            }
+          }
+        },
+        "submission_reference_date": {
+          "title": "SUBMISSION REFERENCE DATE",
+          "columns": {
+            "submission_reference_date_code": {
+              "title": "Submission reference date code"
+            },
+            "submission_reference_date_name": {
+              "title": "Submission reference date name"
+            },
+            "time_unit_of_measure_name": {
+              "title": "Time unit of measure name"
+            },
+            "submission_reference_is_after_event_type_indicator": {
+              "title": "Submission reference is after event type indicator"
+            },
+            "event_type_code": {
+              "title": "Event type code"
+            },
+            "cfihos_unique_code": {
+              "title": "CFIHOS unique code"
+            }
+          }
+        },
+        "tag": {
+          "title": "TAG",
+          "columns": {
+            "plant_code": {
+              "title": "Plant code"
+            },
+            "tag_name": {
+              "title": "Tag name"
+            },
+            "tag_description": {
+              "title": "Tag description"
+            },
+            "parent_tag_name": {
+              "title": "Parent tag name"
+            },
+            "process_unit_code": {
+              "title": "Process unit code"
+            },
+            "area_code": {
+              "title": "Area code"
+            },
+            "construction_assembly_code": {
+              "title": "Construction assembly code"
+            },
+            "commissioning_unit_code": {
+              "title": "Commissioning unit code"
+            },
+            "maintenance_unit_code": {
+              "title": "Maintenance unit code"
+            },
+            "maintenance_system_code": {
+              "title": "Maintenance system code"
+            },
+            "corrosion_loop_code": {
+              "title": "Corrosion loop code"
+            },
+            "tag_class_name": {
+              "title": "Tag class name"
+            },
+            "tag_status": {
+              "title": "Tag status"
+            },
+            "tag_requisition_number": {
+              "title": "Tag requisition number"
+            },
+            "designed_by_company_name": {
+              "title": "Designed by company name"
+            },
+            "production_critical_item_indicator": {
+              "title": "Production critical item indicator"
+            },
+            "safety_critical_item_indicator": {
+              "title": "Safety critical item indicator"
+            },
+            "safety_critical_item_group_code": {
+              "title": "Safety critical item group code"
+            },
+            "safety_critical_item_reason_awarded": {
+              "title": "Safety critical item reason awarded"
+            }
+          },
+          "description": "Individual tag instances within a plant (operational data â empty in reference model)."
+        },
+        "tag_alias": {
+          "title": "TAG ALIAS",
+          "columns": {
+            "plant_code": {
+              "title": "Plant code"
+            },
+            "tag_alias_name": {
+              "title": "Tag alias name"
+            },
+            "tag_name": {
+              "title": "Tag name"
+            }
+          }
+        },
+        "tag_class": {
+          "title": "TAG CLASS",
+          "columns": {
+            "abstract_class_flag": {
+              "title": "abstract class flag"
+            },
+            "equipment_expected_to_be_installed_indicator": {
+              "title": "Equipment expected to be installed indicator"
+            },
+            "parent_tag_class_name": {
+              "title": "parent tag class name"
+            },
+            "tag_class_name": {
+              "title": "tag class name"
+            },
+            "tag_class_definition": {
+              "title": "tag class definition"
+            },
+            "tag_number_format": {
+              "title": "tag number format"
+            },
+            "tag_or_equipment_class_existence_reason_description": {
+              "title": "Tag or equipment class existence reason description"
+            },
+            "cfihos_unique_code": {
+              "title": "CFIHOS unique code"
+            }
+          },
+          "description": "Defines the classification hierarchy for tags (functional objects) in a plant. Each tag class can have a parent, forming a tree structure."
+        },
+        "tag_class_equipment_class_relationship": {
+          "title": "TAG CLASS EQUIPMENT CLASS RELATIONSHIP",
+          "columns": {
+            "tag_class_name": {
+              "title": "Tag class name"
+            },
+            "equipment_class_name": {
+              "title": "Equipment class name"
+            },
+            "tag_or_equipment_class_relationship_reason_for_mapping": {
+              "title": "Tag or equipment class relationship reason for mapping"
+            },
+            "tag_class_cfihos_unique_code": {
+              "title": "Tag class CFIHOS unique code"
+            },
+            "equipment_class_cfihos_unique_code": {
+              "title": "Equipment class CFIHOS unique code"
+            }
+          },
+          "description": "Maps tag classes to their corresponding equipment classes, defining which physical equipment is expected for a functional tag."
+        },
+        "tag_class_property": {
+          "title": "TAG CLASS PROPERTY",
+          "columns": {
+            "tag_class_name": {
+              "title": "Tag class name"
+            },
+            "property_name": {
+              "title": "Property name"
+            },
+            "si_unit_of_measure_name": {
+              "title": "SI unit of measure name"
+            },
+            "imperial_unit_of_measure_name": {
+              "title": "Imperial unit of measure name"
+            },
+            "tag_class_cfihos_unique_code": {
+              "title": "Tag class CFIHOS unique code"
+            },
+            "tag_property_cfihos_unique_code": {
+              "title": "Tag property CFIHOS unique code"
+            }
+          },
+          "description": "Assigns properties to tag classes with their standard SI and Imperial units of measure."
+        },
+        "tag_or_equipment_class": {
+          "title": "TAG OR EQUIPMENT CLASS",
+          "columns": {
+            "tag_class_indicator": {
+              "title": "Tag class indicator"
+            },
+            "equipment_class_indicator": {
+              "title": "Equipment class indicator"
+            },
+            "abstract_class_flag": {
+              "title": "Abstract class flag"
+            },
+            "equipment_expected_to_be_installed_indicator": {
+              "title": "Equipment expected to be installed indicator"
+            },
+            "spare_part_information_required_indicator": {
+              "title": "Spare part information required indicator"
+            },
+            "parent_tag_or_equipment_class_name": {
+              "title": "Parent tag or equipment class name"
+            },
+            "tag_or_equipment_class_name": {
+              "title": "Tag or equipment class name"
+            },
+            "tag_or_equipment_class_definition": {
+              "title": "Tag or equipment class definition"
+            },
+            "tag_or_equipment_class_existence_reason_description": {
+              "title": "Tag or equipment class existence reason description"
+            },
+            "tag_number_format": {
+              "title": "Tag number format"
+            },
+            "cfihos_unique_code": {
+              "title": "CFIHOS unique code"
+            }
+          },
+          "description": "Unified view of both tag classes and equipment classes. The central class hierarchy table of the CFIHOS model."
+        },
+        "tag_or_equipment_class_component": {
+          "title": "TAG OR EQUIPMENT CLASS COMPONENT",
+          "columns": {
+            "tag_or_equipment_class_decomposition_purpose_code": {
+              "title": "Tag or equipment class decomposition purpose code"
+            },
+            "tag_or_equipment_class_name": {
+              "title": "Tag or equipment class name"
+            },
+            "component_role_name": {
+              "title": "Component role name"
+            },
+            "component_role_tag_or_equipment_class_name": {
+              "title": "Component role tag or equipment class name"
+            },
+            "tag_or_equipment_class_minimum_number_of_components": {
+              "title": "Tag or equipment class minimum number of components"
+            },
+            "tag_or_equipment_class_maximum_number_of_components": {
+              "title": "Tag or equipment class maximum number of components"
+            },
+            "tag_or_equipment_class_typical_number_of_components": {
+              "title": "Tag or equipment class typical number of components"
+            },
+            "tag_or_equipment_class_component_to_be_added_indicator": {
+              "title": "Tag or equipment class component to be added indicator"
+            },
+            "cfihos_unique_code": {
+              "title": "CFIHOS unique code"
+            }
+          }
+        },
+        "tag_or_equipment_class_property": {
+          "title": "TAG OR EQUIPMENT CLASS PROPERTY",
+          "columns": {
+            "property_is_relevant_for_tag_indicator": {
+              "title": "Property is relevant for tag indicator"
+            },
+            "property_relevant_for_equipment_indicator": {
+              "title": "Property relevant for equipment indicator"
+            },
+            "property_relevant_for_model_part_indicator": {
+              "title": "Property relevant for model / part indicator"
+            },
+            "tag_or_equipment_class_name": {
+              "title": "Tag or equipment class name"
+            },
+            "property_name": {
+              "title": "Property name"
+            },
+            "si_unit_of_measure_name": {
+              "title": "SI unit of measure name"
+            },
+            "imperial_unit_of_measure_name": {
+              "title": "Imperial unit of measure name"
+            }
+          },
+          "description": "Combined property assignments for tag and equipment classes."
+        },
+        "tag_or_equipment_class_property_application_condition": {
+          "title": "TAG OR EQUIPMENT CLASS PROPERTY APPLICATION CONDITION",
+          "columns": {
+            "tag_or_equipment_class_name": {
+              "title": "Tag or equipment class name"
+            },
+            "property_name": {
+              "title": "Property name"
+            },
+            "application_condition_code": {
+              "title": "Application condition code"
+            },
+            "application_condition_value": {
+              "title": "Application condition value"
+            }
+          }
+        },
+        "tag_or_equipment_class_property_source_standard": {
+          "title": "TAG OR EQUIPMENT CLASS PROPERTY SOURCE STANDARD",
+          "columns": {
+            "property_sequence_number": {
+              "title": "Property sequence number"
+            },
+            "tag_or_equipment_class_name": {
+              "title": "Tag or equipment class name"
+            },
+            "property_name": {
+              "title": "Property name"
+            },
+            "source_standard_code": {
+              "title": "Source standard code"
+            },
+            "source_standard_section": {
+              "title": "Source standard section"
+            },
+            "property_name_in_source_standard": {
+              "title": "Property name in source standard"
+            },
+            "cfihos_unique_code": {
+              "title": "CFIHOS unique code"
+            }
+          },
+          "description": "Links each class property to the source standard (e.g. JIP33) that requires it, with section reference and property name in that standard."
+        },
+        "tag_or_equipment_class_source_standard": {
+          "title": "TAG OR EQUIPMENT CLASS SOURCE STANDARD",
+          "columns": {
+            "tag_or_equipment_class_name": {
+              "title": "Tag or equipment class name"
+            },
+            "source_standard_code": {
+              "title": "Source standard code"
+            },
+            "application_condition_group_code": {
+              "title": "Application condition group code"
+            }
+          },
+          "description": "Links tag/equipment classes to the source standards that apply to them, optionally conditioned by an application condition group."
+        },
+        "tag_or_equipment_class_synonym": {
+          "title": "TAG OR EQUIPMENT CLASS SYNONYM",
+          "columns": {
+            "tag_or_equipment_class_name": {
+              "title": "Tag or equipment class name"
+            },
+            "tag_or_equipment_class_synonym_name": {
+              "title": "Tag or equipment class synonym name"
+            }
+          }
+        },
+        "tag_physical_connection": {
+          "title": "TAG PHYSICAL CONNECTION",
+          "columns": {
+            "from_plant_code": {
+              "title": "From plant code"
+            },
+            "from_tag_name": {
+              "title": "From tag name"
+            },
+            "to_plant_code": {
+              "title": "To plant code"
+            },
+            "to_tag_name": {
+              "title": "To tag name"
+            }
+          }
+        },
+        "tag_property": {
+          "title": "TAG PROPERTY",
+          "columns": {
+            "plant_code": {
+              "title": "Plant code"
+            },
+            "tag_name": {
+              "title": "Tag name"
+            },
+            "property_name": {
+              "title": "Property name"
+            },
+            "tag_property_value": {
+              "title": "Tag property value"
+            },
+            "tag_property_margin_ratio": {
+              "title": "Tag property margin ratio"
+            },
+            "unit_of_measure_name": {
+              "title": "Unit of measure name"
+            },
+            "reason_for_deviating_from_standard_unit_of_measure": {
+              "title": "Reason for deviating from standard unit of measure"
+            },
+            "process_stream_code": {
+              "title": "Process stream code"
+            },
+            "process_activity_code": {
+              "title": "Process activity code"
+            }
+          }
+        },
+        "transmittal": {
+          "title": "TRANSMITTAL",
+          "columns": {
+            "sending_company_name": {
+              "title": "Sending_company_name"
+            },
+            "project_code": {
+              "title": "Project_code"
+            },
+            "transmittal_number": {
+              "title": "Transmittal_number"
+            },
+            "number_of_media": {
+              "title": "Number_of_media"
+            },
+            "transmittal_send_date": {
+              "title": "Transmittal_send_date"
+            },
+            "reason_for_issue": {
+              "title": "Reason_for_issue"
+            }
+          }
+        },
+        "unit_of_measure": {
+          "title": "UNIT OF MEASURE",
+          "columns": {
+            "unit_of_measure_name": {
+              "title": "Unit of measure name"
+            },
+            "unit_of_measure_symbol": {
+              "title": "Unit of measure symbol"
+            },
+            "measurement_system_code": {
+              "title": "Measurement system code"
+            },
+            "unece_code": {
+              "title": "UNECE code"
+            },
+            "cfihos_unique_code": {
+              "title": "CFIHOS unique code"
+            }
+          },
+          "description": "All units of measure used in the model, with symbol, measurement system, and UNECE code."
+        },
+        "unit_of_measure_dimension": {
+          "title": "UNIT OF MEASURE DIMENSION",
+          "columns": {
+            "unit_of_measure_dimension_code": {
+              "title": "Unit of measure dimension code"
+            },
+            "unit_of_measure_dimension_name": {
+              "title": "Unit of measure dimension name"
+            },
+            "cfihos_unique_code": {
+              "title": "CFIHOS unique code"
+            }
+          },
+          "description": "Physical dimensions (e.g. Length, Pressure, Temperature) that units of measure belong to."
+        },
+        "unit_of_measure_dimension_application": {
+          "title": "UNIT OF MEASURE DIMENSION APPLICATION",
+          "columns": {
+            "unit_of_measure_name": {
+              "title": "Unit of measure name"
+            },
+            "unit_of_measure_dimension_code": {
+              "title": "Unit of measure dimension code"
+            }
+          },
+          "description": "Maps each unit of measure to its applicable physical dimensions."
+        },
+        "unit_of_measure_synonym": {
+          "title": "UNIT OF MEASURE SYNONYM",
+          "columns": {
+            "unit_of_measure_name": {
+              "title": "Unit of measure name"
+            },
+            "unit_of_measure_synonym_name": {
+              "title": "Unit of measure synonym name"
+            }
+          }
+        },
+        "vendor_document": {
+          "title": "VENDOR DOCUMENT",
+          "columns": {
+            "document_number": {
+              "title": "Document number"
+            },
+            "document_title": {
+              "title": "Document title"
+            },
+            "planned_final_revision_date": {
+              "title": "Planned final revision date"
+            },
+            "actual_final_revision_date": {
+              "title": "Actual final revision date"
+            },
+            "vendor_document_update_description": {
+              "title": "Vendor document update description"
+            }
+          }
+        },
+        "application_condition_group_mem": {
+          "title": "application condition group mem",
+          "columns": {
+            "application_condition_group_code": {
+              "title": "application condition group code"
+            },
+            "application_condition_code": {
+              "title": "application condition code"
+            },
+            "application_condition_group_code_cfihos_unique_id": {
+              "title": "application condition group code CFIHOS unique id"
+            },
+            "application_condition_code_cfihos_unique_id": {
+              "title": "application condition code CFIHOS unique id"
+            }
+          }
+        },
+        "x_app_cond_source_std_doc_and_data_requirement": {
+          "title": "x APP_COND SOURCE_STD_DOC_AND_DATA_REQUIREMENT",
+          "columns": {
+            "application_condition_code": {
+              "title": "Application_condition_code"
+            },
+            "source_standard_document_and_data_requirement_number": {
+              "title": "Source_standard_document_and_data_requirement_number"
+            },
+            "source_standard_code": {
+              "title": "Source_standard_code"
+            }
+          }
+        },
+        "x_aspect_type": {
+          "title": "x ASPECT_TYPE",
+          "columns": {
+            "aspect_type_code": {
+              "title": "Aspect_type_code"
+            },
+            "aspect_type_name": {
+              "title": "Aspect_type_name"
+            },
+            "aspect_type_definition": {
+              "title": "Aspect_type_definition"
+            },
+            "aspect_type_usage": {
+              "title": "Aspect_type_usage"
+            },
+            "cfihos_unique_code": {
+              "title": "CFIHOS_unique_code"
+            }
+          }
+        },
+        "x_document_revision_equipment": {
+          "title": "x DOCUMENT_REVISION EQUIPMENT",
+          "columns": {
+            "document_revision_code": {
+              "title": "Document_revision_code"
+            },
+            "document_number": {
+              "title": "Document_number"
+            },
+            "equipment_code": {
+              "title": "Equipment_code"
+            }
+          }
+        },
+        "x_document_revision_model_part": {
+          "title": "x DOCUMENT_REVISION MODEL_PART",
+          "columns": {
+            "document_revision_code": {
+              "title": "Document_revision_code"
+            },
+            "document_number": {
+              "title": "Document_number"
+            },
+            "model_part_name": {
+              "title": "Model_part_name"
+            },
+            "manufacturer_company_name": {
+              "title": "Manufacturer_company_name"
+            }
+          }
+        },
+        "x_document_revision_tag": {
+          "title": "x DOCUMENT_REVISION TAG",
+          "columns": {
+            "document_revision_code": {
+              "title": "Document_revision_code"
+            },
+            "document_number": {
+              "title": "Document_number"
+            },
+            "plant_code": {
+              "title": "Plant_code"
+            },
+            "tag_name": {
+              "title": "Tag_name"
+            }
+          }
+        },
+        "x_project_document_revision": {
+          "title": "x PROJECT DOCUMENT_REVISION",
+          "columns": {
+            "project_code": {
+              "title": "Project_code"
+            },
+            "document_revision_code": {
+              "title": "Document_revision_code"
+            },
+            "document_number": {
+              "title": "Document_number"
+            }
+          }
+        },
+        "x_purchase_order_equipment_class": {
+          "title": "x PURCHASE_ORDER EQUIPMENT_CLASS",
+          "columns": {
+            "purchase_order_number": {
+              "title": "Purchase_order_number"
+            },
+            "purchase_order_issuer_company_name": {
+              "title": "Purchase_order_issuer_company_name"
+            },
+            "equipment_class_name": {
+              "title": "Equipment_class_name"
+            }
+          }
+        },
+        "x_tag_or_equipment_class_decomposition_purpose": {
+          "title": "x TAG_OR_EQUIPMENT_CLASS_DECOMPOSITION_PURPOSE",
+          "columns": {
+            "tag_or_equipment_class_decomposition_purpose_code": {
+              "title": "Tag_or_equipment_class_decomposition_purpose_code"
+            },
+            "tag_or_equipment_class_decomposition_purpose_name": {
+              "title": "Tag_or_equipment_class_decomposition_purpose_name"
+            },
+            "aspect_type_code": {
+              "title": "Aspect_type_code"
+            },
+            "cfihos_unique_code": {
+              "title": "CFIHOS_unique_code"
+            }
+          }
+        },
+        "xfix_tag_equipment_class_property_source": {
+          "title": "xFIX TAG EQUIPMENT CLASS PROPERTY SOURCE",
+          "columns": {
+            "tag_class_name": {
+              "title": "tag class name"
+            },
+            "tag_property_name": {
+              "title": "tag property name"
+            },
+            "source_standard_code": {
+              "title": "source standard code"
+            },
+            "source_standard_section": {
+              "title": "source standard section"
+            },
+            "property_name_in_source_standard": {
+              "title": "property name in source standard"
+            }
+          }
+        },
+        "xrequirement_standard_source": {
+          "title": "xREQUIREMENT STANDARD SOURCE",
+          "columns": {
+            "requirement_standard_source_code": {
+              "title": "Requirement standard source code"
+            },
+            "requirement_standard_source_name": {
+              "title": "Requirement standard source name"
+            },
+            "cfihos_unique_code": {
+              "title": "CFIHOS unique code"
+            }
+          }
+        },
+        "xtag_class_required_discipline_document_type": {
+          "title": "xTAG_CLASS_REQUIRED_DISCIPLINE_DOCUMENT_TYPE",
+          "columns": {
+            "tag_class_name": {
+              "title": "Tag_class_name"
+            },
+            "discipline_document_type_short_code": {
+              "title": "Discipline_document_type_short_code"
+            },
+            "document_type_name": {
+              "title": "Document_type_name"
+            },
+            "requirement_standard_source_code": {
+              "title": "Requirement_standard_source_code"
+            }
+          }
+        }
+      }
+    }
+  }
+}
